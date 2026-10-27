@@ -2,10 +2,10 @@
 declare(strict_types=1);
 require_once __DIR__ . '/../src/RA4_comun.php';
 
- session_start([
+session_start([
      'cookie_httponly' => true,
      'cookie_samesite' => 'Lax',
- ]);
+]);
 
  $ciclos    = catalogoCiclos();
  $validador = new ValidadorCurriculo($ciclos);
